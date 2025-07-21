@@ -15,3 +15,22 @@ h2{
 p{
   text-align: justify;
 }
+#exit, #finish, #print {
+  cursor: pointer;
+  border-radius: 7px;
+  padding: 3px 8px;
+  color: white;
+  background: rgba(128, 128, 128, 0.76);
+}
+#exit:hover{
+  
+  background: rgb(128, 128, 128);
+}
+#finish:hover{
+  
+  background: rgb(128, 128, 128);
+}
+#print:hover{
+  
+  background: rgb(128, 128, 128);
+}

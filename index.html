@@ -39,11 +39,11 @@
     </div>
   </header>
 
-  <main>
-    <div id="main" class="mt-[10vh]">
+  <main class="mt-[10vh]">
+    <div id="main" >
       <section id="hero">
 
-        <div class="container">
+        <div class="container pt-5">
           <div class="h-[5.5vh] flex justify-center items-center">
             <h1 class="font-bold text-output">THE TWO HEARTS OF LOVE</h1>
           </div>
@@ -77,11 +77,10 @@
           </div>
         </div>
 
-        <div class="container">
+        <div class="container flex flex-col justify-center items-center">
           <h2 class="title text-center font-bold py-3 title">
             The Association of Sacred Hearts of Jesus and Immaculate Heart of Mary, St Stephen Catholic Church Gauraka,
-            Niger
-            State. Holds their Meeting:
+            Niger State. Holds their Meeting:
           </h2>
           <p class="text-center pb-3 title"> Every Thursday by 5:30 pm</p>
           <p class="text-center pb-3 title">First Friday of Every the Month</p>
@@ -142,7 +141,7 @@
 
       <section id="pray" class="mb-9">
         <em>
-          <li class="container underline my-1 cursor-pointer thusday-adoration py-2 pl-2 ">
+          <li class="container thurday-prayer-button underline my-1 cursor-pointer thusday-adoration py-2 pl-2 ">
             Thursday Adoration...
           </li>
           <li onclick="alert('Coming Soon')"
@@ -168,7 +167,7 @@
       </section>
     </div>
 
-    <section id="thursday-adoration" class="overflow-hidden">
+    <section id="thursday-adoration" class="overflow-hidden hidden">
       <div class="container">
         <h2 class="font-bold text-justify pb-3">Prayer for weekly general Holy Hour Adoration (Page 66)</h2>
         <h2 class="font-bold text-justify pb-3">In the Name of the Father and of the Son and of the Holy Spirit*. Amen
@@ -600,14 +599,14 @@
         <h2>Leader: - For those in the agony of death and sinners</h2>
         <p class="pb-3">Our Father… Hail Mary… Glory be…</p>
 
-        <h1>Leader: - For the Universal reign of the Sacred Heart especially by Daily Communion, the Holy Hour and the
-          Enthronement of Sacred heart,</h1>
+        <h2>Leader: - For the Universal reign of the Sacred Heart especially by Daily Communion, the Holy Hour and the
+          Enthronement of Sacred heart,</h2>
         <p class="pb-3">Our Father… Hail Mary… Glory be…</p>
 
-        <h1>Leader: - For the intentions of all here present.</h1>
+        <h2>Leader: - For the intentions of all here present.</h2>
         <p class="pb-3">Our Father… Hail Mary… Glory be…</p>
 
-        <h1>Leader: - For our Country.</h1>
+        <h2>Leader: - For our Country.</h2>
         <p class="pb-3">Our Father… Hail Mary… Glory be…</p>
 
         <p>Leader:- Most Sacred Heart of Jesus, (5 times)</p>
@@ -704,7 +703,8 @@
           light of your
           divine glory. So may we who have worshipped you and been blessed by you here on earth come to behold the
           radiant
-          glory of your unveiling countenance in heaven for ever and ever. Amen. Sacred heart of Jesus, *your kingdom come (3 times).
+          glory of your unveiling countenance in heaven for ever and ever. Amen. Sacred heart of Jesus, *your kingdom
+          come (3 times).
         </p>
         <h2>Leader: - For the intentions of the Holy Father the Pope.</h2>
         <p class="pb-3">Our Father… Hail Mary… Glory be…</p>
@@ -715,12 +715,13 @@
         <p>May his sorrow console us (Amen).</p>
         <p>May his virtues enlighten us in our words and deeds (Amen).</p>
         <p>May the Joy of the heaven be our eternal reward (Amen).</p>
-        <p class="pb-3">And may the grace and blessings of God the Father and of the Son and of the Holy Spirit be with us now and forever*. Amen</p>
+        <p class="pb-3">And may the grace and blessings of God the Father and of the Son and of the Holy Spirit be with
+          us now and forever*. Amen</p>
 
         <h2 class="pb-3">Closing Hymn: (page 321, 322, 323)</h2>
         <h2>Leader:-Sacred heart of Jesus,(3 times)</h2>
         <p class="pb-3">Response:-Have mercy on us (3 times)</p>
-       
+
         <h2>Leader:-Immaculate Heart of Mary</h2>
         <p class="pb-3">Response:-Pray us </p>
 
@@ -729,11 +730,15 @@
 
 
 
-        <h2 aria-colspan="pb-3">In the Name of the Father and of the Son and of the Holy Spirit*. Amen</h2>
+        <h2 >In the Name of the Father and of the Son and of the Holy Spirit*. Amen</h2>
 
 
 
-
+        <div class="flex justify-start ali my-7">
+          <button id="exit">Exit</button>
+          <button id="finish" class="mx-3">Finish</button>
+          <button id="print" onclick="alert('Coming Soon')">Print</button>
+        </div>
 
 
 
@@ -881,7 +886,7 @@
             </svg>
           </div>
 
-          <div class="pl-3 pb-1.5 flex justify-between items-center">
+          <div class="pl-3 pb-3 flex justify-between items-center">
             <div class="flex justify-center items-center pb-1">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                 stroke="currentColor" class="size-6 pr-1.5">

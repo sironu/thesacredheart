@@ -50,23 +50,46 @@ darkMode.addEventListener("click", () => {
 
 
 const pTags = document.getElementsByTagName([..."p"]);
-const h2s = document.getElementsByTagName([..."h2"]);
+const h2s = document.querySelectorAll("h2");
+
 
 const range = document.querySelector("#range-val");
 
 
 range.addEventListener("input", () => {
-  for (const pTag of pTags) {
-    pTag.style.fontSize=`${range.value}rem`
-     
-    }
+  
   for (const h2 of h2s) {
    h2.style.fontSize=`${range.value}rem`
      
-    }
+  }
+  for (const pTag of pTags) {
+    pTag.style.fontSize = `${range.value}rem`;
+  }
   
-  console.log(`${range.value}rem`);
+  // console.log(`${range.value}rem`);
 });
+
+const thursdayAdoration = document.querySelector("#thursday-adoration");
+const main = document.querySelector("#main");
+const thurdayPrayerButton = document.querySelector(".thurday-prayer-button");
+
+thurdayPrayerButton.addEventListener('click', () => {
+  thursdayAdoration.classList.toggle('hidden')
+  main.classList.toggle('hidden')
+  scrollTo({ top: 0, behavior: "smooth" });
+})
+document.getElementById('exit').onclick  = function toggleMain() {
+  thursdayAdoration.classList.toggle("hidden");
+  main.classList.toggle("hidden");
+  scrollTo({ top: 0, behavior: "smooth" });
+}
+
+document.getElementById('finish').onclick  = function toggleMain() {
+  thursdayAdoration.classList.toggle("hidden");
+  main.classList.toggle("hidden");
+  scrollTo({ top: 0, behavior: "smooth" });
+}
+
 
 const openNav = document.querySelector(".open-nav");
 const openSetting = document.querySelector(".open-setting");
