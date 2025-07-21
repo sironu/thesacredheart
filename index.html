@@ -17,13 +17,13 @@
 
 <body>
   <header>
-    <div class="h-[10vh] grid place-items-center"
+    <div class="h-[10vh] grid place-items-center fixed left-0 top-0 w-full z-20"
       style="background: conic-gradient(darkred, darkblue, darkblue, darkred, darkred)">
       <nav class="w-[92%] mx-auto flex text-white justify-between items-center">
-        <div class="open-nav *:w-6 *:h-[3px] *:bg-white *:even:my-1 cursor-pointer">
-          <div></div>
-          <div></div>
-          <div></div>
+        <div class="open-nav cursor-pointer">
+          <div class="w-6 h-[3px] bg-white"></div>
+          <div class="w-6 h-[3px] bg-white  my-1"></div>
+          <div class="w-6 h-[3px] bg-white"></div>
         </div>
         <h6 id="date" class="text-white">Today's Date</h6>
 
@@ -41,7 +41,7 @@
 
 
   <main>
-    <div id="main">
+    <div id="main" class="mt-[10vh]">
       <section id="hero">
 
         <div class="container">
@@ -131,6 +131,7 @@
           </div>
         </div>
       </section>
+
       <section class="mb-9 pray  " style="background: radial-gradient(#1D293D, #020618 )">
         <div class="container flex items-center h-[7rem] lg:h-[15rem] w-full text-white">
           <div>
@@ -146,23 +147,23 @@
 
 
      <section id="pray" class="mb-9">
-      <ul class=" *:even:bg-slate-100 *:odd:bg-blue-100">
-        <li class="container cursor-pointer thusday-adoration py-2 pl-2 ">
+      <ul">
+        <li class="container my-1 bg-slate-100 cursor-pointer thusday-adoration py-2 pl-2 ">
           Thursday Adoration...
         </li>
-        <li class="container cursor-pointer friday-adoration py-2 pl-2 ">
+        <li class="container my-1 bg-gray-100 cursor-pointer friday-adoration py-2 pl-2 ">
           First Friday Adoration...
         </li>
-        <li class="container cursor-pointer saturday-adoration py-2 pl-2 ">
+        <li class="container my-1 bg-slate-100 cursor-pointer saturday-adoration py-2 pl-2 ">
           First Saturday Adoration...
         </li>
-        <li class="container cursor-pointer sunday-adoration py-2 pl-2 ">
+        <li class="container my-1 bg-gray-100 cursor-pointer sunday-adoration py-2 pl-2 ">
           First Sunday Rosary Procession...
         </li>
-        <li class="container cursor-pointer novena py-2 pl-2 ">
+        <li class="container my-1 bg-slate-100 cursor-pointer novena py-2 pl-2 ">
           Sacred Heart Novena...
         </li>
-        <li class="container cursor-pointer rosary py-2 pl-2 ">
+        <li class="container my-1 bg-gray-100 cursor-pointer rosary py-2 pl-2 ">
           Holy Rosary...
         </li>
 
@@ -423,8 +424,8 @@
         </section>
 
         <section id="mobile-app">
-          <div class="flex justify-center items-center *:not-last:pr-2">
-            <img class="w-20 h-7 cursor-pointer" src="./src/Images/Apple store.webp" alt="apple-store">
+          <div class="flex justify-center items-center">
+            <img class="w-20 h-7 pr-2 cursor-pointer" src="./src/Images/Apple store.webp" alt="apple-store">
             <img class="w-20 h-7 cursor-pointer" src="./src/Images/google Play store.webp" alt="google-store">
           </div>
         </section>
