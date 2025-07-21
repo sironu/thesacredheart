@@ -48,13 +48,23 @@ darkMode.addEventListener("click", () => {
   }
 });
 
-const fonts = document.querySelector(".incFont");
+
+const pTags = document.getElementsByTagName([..."p"]);
+const h2s = document.getElementsByTagName([..."h2"]);
+
 const range = document.querySelector("#range-val");
-// const pTags = document.getElementsByTagName([..."p"]);
 
 
 range.addEventListener("input", () => {
-  // (fonts.style.fontSize = `${range.value}rem`);
+  for (const pTag of pTags) {
+    pTag.style.fontSize=`${range.value}rem`
+     
+    }
+  for (const h2 of h2s) {
+   h2.style.fontSize=`${range.value}rem`
+     
+    }
+  
   console.log(`${range.value}rem`);
 });
 

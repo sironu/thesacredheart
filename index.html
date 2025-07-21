@@ -39,7 +39,6 @@
     </div>
   </header>
 
-
   <main>
     <div id="main" class="mt-[10vh]">
       <section id="hero">
@@ -50,37 +49,33 @@
           </div>
         </div>
 
-        <section id="carousel-section" class="carousel-section mb-4">
-          <div id="splide" class="splide">
-            <div class="splide__track">
-              <ul class="splide__list">
-                <li class="splide__slide">
-                  <img class="w-full h-[200px]" src="./src/Images/Sacred heart img.jpeg" alt="Sacred Hearts Image">
-                </li>
+        <div id="splide" class="splide">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <img class="w-full h-[200px]" src="./src/Images/Sacred heart img.jpeg" alt="Sacred Hearts Image">
+              </li>
 
-               
-                <li class="splide__slide">
-                  <img class="w-full h-[200px]" src="./src/Images/Sacred hearts img_1.jpeg" alt="Sacred Hearts Image">
-                </li>
+              <li class="splide__slide">
+                <img class="w-full h-[200px]" src="./src/Images/Sacred hearts img_1.jpeg" alt="Sacred Hearts Image">
+              </li>
 
-                <li class="splide__slide">
-                  <img class="w-full h-[200px]" src="./src/Images/Sacred hearts img_2.jpeg" alt="Sacred Hearts Image">
-                </li>
+              <li class="splide__slide">
+                <img class="w-full h-[200px]" src="./src/Images/Sacred hearts img_2.jpeg" alt="Sacred Hearts Image">
+              </li>
 
-                <li class="splide__slide block lg:hidden">
-                  <img class="w-full h-[200px]  block lg:hidden" src="./src/Images/Sacred hearts img_3.jpeg" alt="Sacred Hearts Image">
-                </li>
+              <li class="splide__slide block lg:hidden">
+                <img class="w-full h-[200px]  block lg:hidden" src="./src/Images/Sacred hearts img_3.jpeg"
+                  alt="Sacred Hearts Image">
+              </li>
 
-                <li class="splide__slide">
-                  <img class="w-full h-[200px]" src="./src/Images/Sacred hearts img_4.jpeg" alt="Sacred Hearts Image">
-                </li>
+              <li class="splide__slide">
+                <img class="w-full h-[200px]" src="./src/Images/Sacred hearts img_4.jpeg" alt="Sacred Hearts Image">
+              </li>
 
-              </ul>
-            </div>
+            </ul>
           </div>
-
-        </section>
-
+        </div>
 
         <div class="container">
           <h2 class="title text-center font-bold py-3 title">
@@ -88,18 +83,18 @@
             Niger
             State. Holds their Meeting:
           </h2>
-          <h3 class="text-center pb-3 title"> Every Thursday by 5:30 pm</h3>
-          <h3 class="text-center pb-3 title">First Friday of Every the Month</h3>
-          <h3 class="text-center pb-3 title">First Saturday of Every the Month</h3>
-          <h3 class="text-center pb-3 title">First Sunday of Every the Month</h3>
+          <p class="text-center pb-3 title"> Every Thursday by 5:30 pm</p>
+          <p class="text-center pb-3 title">First Friday of Every the Month</p>
+          <p class="text-center pb-3 title">First Saturday of Every the Month</p>
+          <p class="text-center pb-3 title">First Sunday of Every the Month</p>
         </div>
 
       </section>
 
       <section id="about">
         <div class="container">
-          <h3 class="text-center font-bold">Introduction</h3>
-          <h3 class="text-center font-bold pb-3"> History of the Devotion to the Sacred Heart</h3>
+          <h2 class="text-center font-bold">Introduction</h2>
+          <h2 class="text-center font-bold pb-3"> History of the Devotion to the Sacred Heart</h2>
 
           <p class="text-justify pb-3">
             The devotion to the Sacred Heart of Jesus has its roots in early Christian mysticism, particularly in the
@@ -126,8 +121,9 @@
             cornerstone of Catholic spirituality, focusing on the transformative power of Jesus' love.
           </p>
           <div class="grid place-items-center pb-3">
-            <button type="button" class="text-white rounded-xs py-1.5 px-2.5 border-none outline-none"
-              style="background: conic-gradient(darkred, darkblue, darkblue, darkred, darkred);">View More</button>
+            <button type="button"
+              class="text-black hover:text-white bg-gray-300 hover:bg-gray-600 rounded-lg py-1.5 px-2.5 border-none outline-none">View
+              More</button>
           </div>
         </div>
       </section>
@@ -140,213 +136,775 @@
           </div>
         </div>
         <div class="rounded-l-full overflow-hidden">
-          <img class="h-[7rem] lg:h-[15rem] w-full" src="./src/Images/Pray-without-ceasing.png"  alt="praying">
+          <img class="h-[7rem] lg:h-[15rem] w-full" src="./src/Images/Pray-without-ceasing.png" alt="praying">
         </div>
       </section>
 
+      <section id="pray" class="mb-9">
+        <em>
+          <li class="container underline my-1 cursor-pointer thusday-adoration py-2 pl-2 ">
+            Thursday Adoration...
+          </li>
+          <li onclick="alert('Coming Soon')"
+            class="container underline my-1 cursor-pointer friday-adoration py-2 pl-2 ">
+            First Friday Adoration...
+          </li>
+          <li onclick="alert('Coming Soon')"
+            class="container underline my-1 cursor-pointer saturday-adoration py-2 pl-2 ">
+            First Saturday Adoration...
+          </li>
+          <li onclick="alert('Coming Soon')"
+            class="container underline my-1 cursor-pointer sunday-adoration py-2 pl-2 ">
+            First Sunday Rosary Procession...
+          </li>
+          <li onclick="alert('Coming Soon')" class="container underline my-1 cursor-pointer novena py-2 pl-2 ">
+            Sacred Heart Novena...
+          </li>
+          <li onclick="alert('Coming Soon')" class="container underline my-1 cursor-pointer rosary py-2 pl-2 ">
+            Holy Rosary...
+          </li>
+        </em>
+
+      </section>
+    </div>
+
+    <section id="thursday-adoration" class="overflow-hidden">
+      <div class="container">
+        <h2 class="font-bold text-justify pb-3">Prayer for weekly general Holy Hour Adoration (Page 66)</h2>
+        <h2 class="font-bold text-justify pb-3">In the Name of the Father and of the Son and of the Holy Spirit*. Amen
+        </h2>
+        <h2 class="font-bold text-justify pb-3">Hymn: Come, Holy Ghost (Page 66, 85 or 320)</h2>
+        <ul class="pb-3">
+          <div class="flex pb-3">
+            <p class="pr-3">1</p>
+            <li>
+              <p>Come, Holy Ghost, Creator, come</p>
+              <p>From Thy bright heav’nly throne,</p>
+              <p>Come, take possession of our souls,</p>
+              <p>And make them all Thine own.</p>
+            </li>
+          </div>
+          <div class="flex pb-3">
+            <p class="pr-3">2</p>
+            <li>
+              <p>Thou who art called the Paraclete,</p>
+              <p>Best gift of God above,</p>
+              <p>The living spring, the living fire,</p>
+              <p>Sweet unction and true love.</p>
+
+            </li>
+          </div>
+          <div class="flex pb-3">
+            <p class="pr-3">3</p>
+            <li>
+              <p>Thou who art sevenfold in Thy grace,</p>
+              <p>Finger of God’s right hand;</p>
+              <p>His promise, teaching little ones</p>
+              <p>To speak and understand.</p>
+            </li>
 
 
-     <section id="pray" class="mb-9">
-      <ul">
-        <li class="container my-1 bg-slate-100 cursor-pointer thusday-adoration py-2 pl-2 ">
-          Thursday Adoration...
-        </li>
-        <li class="container my-1 bg-gray-100 cursor-pointer friday-adoration py-2 pl-2 ">
-          First Friday Adoration...
-        </li>
-        <li class="container my-1 bg-slate-100 cursor-pointer saturday-adoration py-2 pl-2 ">
-          First Saturday Adoration...
-        </li>
-        <li class="container my-1 bg-gray-100 cursor-pointer sunday-adoration py-2 pl-2 ">
-          First Sunday Rosary Procession...
-        </li>
-        <li class="container my-1 bg-slate-100 cursor-pointer novena py-2 pl-2 ">
-          Sacred Heart Novena...
-        </li>
-        <li class="container my-1 bg-gray-100 cursor-pointer rosary py-2 pl-2 ">
-          Holy Rosary...
-        </li>
-
-      </ul>
-
-     </section>
+          </div>
+          <div class="flex pb-3">
+            <p class="pr-3">4</p>
+            <li>
+              <p>O guide our minds with Thy blest light,</p>
+              <p>With love our hearts inflame;</p>
+              <p>And with Thy strength, which ne’er decays,</p>
+              <p>Confirm our mortal frame.</p>
+            </li>
 
 
 
+          </div>
+          <div class="flex pb-3">
+            <p class="pr-3">5</p>
+            <li>
+              <p>Far from us drive our deadly foe;</p>
+              <p>True peace unto us bring;</p>
+              <p>And through all perils lead us safe</p>
+              <p>Beneath Thy sacred wing.</p>
+            </li>
 
+
+
+          </div>
+          <div class="flex pb-3">
+            <p class="pr-3">6</p>
+
+            <li>
+              <p>Through Thee may we the Father know,</p>
+              <p>Through Thee th’eternal Son,</p>
+              <p>And Thee the Spirit of them both,</p>
+              <p>Thrice-blessèd Three in One.</p>
+            </li>
+
+
+          </div>
+          <div class="flex pb-3">
+            <p class="pr-3">7</p>
+
+            <li>
+              <p>All glory to the Father be,</p>
+              <p>With His co-equal Son:</p>
+              <p>The same to Thee, great Paraclete,</p>
+              <p>While endless ages run </p>
+            </li>
+
+          </div>
+
+        </ul>
+        <h2 class="font-bold text-justify">Leader: - Prayer to the Holy Spirit</h2>
+        <h2 class="font-bold text-justify pb-3">All:- </h2>
+        <p class="pb-3">Come Holy Spirit, fill the heart of the faithful and enkindle in them the fire of thy love.
+          *Send forth
+          Your Spirit and they shall be created and thou shall renew the face of the earth</p>
+        <p class="pb-3">O God who by the light of the Holy Spirit did instruct the heart of the faithful grant that in
+          the same
+          spirit we may be truly wise and ever rejoice in his consolation true Christ our Lord. Amen </p>
+
+        <h2>Leader: - Intentions for the Holy Hour, General Intentions</h2>
+        <p class="pb-3">For the social reign of the sacred heart of Jesus through the Enthronement of the sacred heart
+          in homes. For the Intention of the Holy Father. For the sanctification of all Priest, Religious, Seminarians.
+          For
+          Vocations. For dying sinners, for fallen away and for the sin of our Own Parish.</p>
+        <h2>Leader: - Suggested intentions for Holy Hour</h2>
+        <h2>All: -</h2>
+        <p class="pb-3">
+          For happy marriage. For Parent. For husband. For wife. For son. For daughter. For sick child. For safe
+          delivery. For successful operation. For success in business. For reconciliation. For employment. For
+          conversion. For health. For sick person. For happy death. For safe journey. For soul in purgatory. For family
+          and relatives. For peace in family. For divided family. For peace of mind. For overcoming temptation. For
+          sinners. For return to sacraments. For a drunkard. For departed relative. For departed friend. For increase of
+          Priests. For the Holy Father. For barren Wives. For success in studies. For a child exposed to moral danger.
+          For a handicapped child. For a wise choice of marriage partner.For a child’s vocation to religious or Priestly
+          life.
+        </p>
+        <h2>Leader: - Act of Contrition</h2>
+        <h2>All: -</h2>
+        <p class="pb-3">My God, My Creator, My Master, My Friend and Lover, My Judge, This Evil thing I have done, Evil
+          in
+          itself, Evil in its degrading consequences, Evil in its offensiveness to you, For you have Forbidden it, I
+          have no
+          Excuse, Father forgive me I have offended you. The creature the Creator, The friend the Master, The beloved
+          the Lover,
+          The Culprit the Judge, I deserve the consequences, I have no excuse. Father forgive me, I have crucified your
+          Son
+          Jesus, I have offended you, The son The Father, I deserve the consequences, I have no excuse, I wish i have
+          not done
+          it, Almighty yet all merciful, All just yet all Loving, I have done this thing, I deserve the consequences,
+          You detest
+          it, It violates your law and order, It in some way hurt you, For my own sake, for the sake of others, But most
+          for
+          your Sake, For the sake of Jesus Christ, I have hurt Him. Hurt him in his tender Heart, It shall not happen
+          again,
+          with Your help it shall not, Though my evil nature craves, Though my weakness fearst, I am determined, For my
+          own
+          sake, To keep it far from me, to avoid the danger, For your sake more than mine, I will take the means to put
+          it out
+          of my life, and all that lead to it, But I am needy and poor, O God! Help me. Amen </p>
+
+        <h2 class="py-1 5">Leader: - Our Father...</h2>
+        <h2>Leader: - Prayer to the sacred heart at the beginning of the Adoration</h2>
+        <h2>All: -</h2>
+        <p class="pb-3">Behold me, once again prostrate at your feet. O Divine Savior, as a faithful adorer of your
+          Sacred
+          Heart, and as a consoling friend who comes to make reparation for the outrages which this Heart Incessantly
+          receives.
+          At last the precious moment has arrived when, according to your desire, I am nearer Thee. I know that you are
+          ready to
+          welcome me and to listen to me. Your own voice has called me. My heart was longing to hear this call; and
+          though I
+          know my unworthiness, docile to your summons, I come without fear. And yet who am I, O my God, that I should
+          fulfill
+          on earth the sublime office of the angels and saints to adore you, saying with them from the depths of my
+          heart: “Holy
+          Holy Holy is the heart of Jesus”. I adore you, heart of Jesus, united substantially with the word of God. I
+          love you,
+          heart of Jesus, and symbol of my Saviour’s love for me. I honour you, heart of Jesus, the most beautiful, the
+          best,
+          and the sweetest of all hearts. I dedicate myself to adore, love and honour you during all my life here on
+          earth, so
+          that I may glorify you throughout eternity.</p>
+        <p class="pb-3">Who am I, O my divine savour that I should dare to make reparation to you; that I should ask you
+          to
+          accept me as your
+          victim. Even though I surrender myself forever to you and concentrate myself to you unreservedly to your
+          service, is
+          my
+          homage of reparation pleasing to you? I have so many personal amends to make! Will not my own sins be a
+          hindrance to
+          your divine mercy? Behold me prostrate in your present with sentiments of deep humility and loving compassion.
+          Look
+          upon
+          me with tenderness from your sanctuary where you dost open your heart to me. Forgive my unworthiness, Divine
+          Jesus and
+          grant me that grace to spend this hour in a manner pleasing to you, so that your heart may be consoled and may
+          receive
+          reparation for the forgetfulness and coldness of those who abandon you, and for the profanation of those who
+          outrage
+          you
+          even in the very sacrament of your love. The thought of their outrages fill my soul with horror, while the
+          remembrance
+          of my own sins overwhelms me with grief. Pardon, O lord, pardon my infidelities and those of all poor sinners.
+          I
+          acknowledge you as the God of my heart. May I never forget you; may I never insult you again. Would that I
+          could, even
+          at the cost of my life, repair and make you forget so much ingratitude! O dearest Jesus enlighten the blind
+          who slight
+          you, and convert sinners who abuse your benefits and wound your most sacred heart. Accept as a token of
+          reparation my
+          avowal, my sorrow, my gratitude and my promises. Avowal of my sins which I detest, sorrow for the outrages
+          which
+          grieve
+          you; gratitude for your merciful kindness, finally the desire, the will, and the sincere resolution to make
+          reparation
+          by adoring you perpetually upon earth, so that I may adore you forever in heaven where I shall love you
+          without fear
+          of
+          losing you, O God of my heart. Amen. May the sacred heart of Jesus be loved, praised, blessed and adored
+          forever and
+          ever! Amen.</p>
+        <h2>Leader: - The Bead of the Sacred Heart of Jesus (Use the Rosary Bead to recite it)</h2>
+        <h2>All: -</h2>
+        <h2>On the Crucifix say the following Prayer:</h2>
+        <p class="pb-3">Soul of Christ, Sanctify me, *Body of Christ, save me, *Blood of Christ, Inebriate me, *Water
+          out of the
+          side of Christ, wash me, *Passion of Christ, Strengthen me, *O Good Jesus, Hear me, *within your wounds, hide
+          me,
+          *Suffer me never to be separated from you. *From the malignant enemies defend me, *and bid me come to thee.
+          *That with
+          your Saints I May Praise thee for all Eternity. Amen.</p>
+
+        <p>Leader: - Jesus meek and humble of heart,</p>
+        <p class="pb-3">Response: Make my heart like unto thee.</p>
+        <p>Leader: - Sweet heart of Jesus, (3 times)</p>
+        <p class="pb-3">Response: Be my love (3 times)</p>
+        <p>Leader: - Sweet heart of Mary,</p>
+        <p class="pb-3">Response: Be my Salvation</p>
+        <h2 class="pb-3">Leader: - The first sorrowful mystery, the agony of Jesus in the garden</h2>
+
+
+
+        <p>Leader: - Jesus meek and humble of heart,</p>
+        <p class="pb-3">Response: Make my heart like unto thee.</p>
+        <p>Leader: - Sweet heart of Jesus, (10 times)</p>
+        <p class="pb-3">Response: Be my love (10 times)</p>
+        <p>Leader: - Sweet heart of Mary,</p>
+        <p class="pb-3">Response: Be my Salvation</p>
+        <h2 class="pb-3">The second sorrowful mystery, Jesus is scourged at the pillar.</h2>
+
+        <p>Leader: - Jesus meek and humble of heart,</p>
+        <p class="pb-3">Response: Make my heart like unto thee.</p>
+        <p>Leader: - Sweet heart of Jesus, (10 times)</p>
+        <p class="pb-3">Response: Be my love (10 times)</p>
+        <p>Leader: - Sweet heart of Mary,</p>
+        <p class="pb-3">Response: Be my Salvation</p>
+        <h2 class="pb-3">Leader: - The third sorrowful mystery, Jesus is crowned with thorns.</h2>
+
+
+        <p>Leader: - Jesus meek and humble of heart,</p>
+        <p class="pb-3">Response: Make my heart like unto thee.</p>
+        <p>Leader: - Sweet heart of Jesus, (10 times)</p>
+        <p class="pb-3">Response: Be my love (10 times)</p>
+        <p>Leader: - Sweet heart of Mary,</p>
+        <p class="pb-3">Response: Be my Salvation</p>
+        <h2 class="pb-3">Leader: - The fourth sorrowful mystery, Jesus carries his cross</h2>
+
+
+        <p>Leader: - Jesus meek and humble of heart,</p>
+        <p class="pb-3">Response: Make my heart like unto thee.</p>
+        <p>Leader: - Sweet heart of Jesus, (10 times)</p>
+        <p class="pb-3">Response: Be my love (10 times)</p>
+        <p>Leader: - Sweet heart of Mary,</p>
+        <p class="pb-3">Response: Be my Salvation</p>
+        <h2 class="pb-3">The fifth sorrowful mystery, Jesus dies on the cross</h2>
+
+        <p>Leader: - Jesus meek and humble of heart,</p>
+        <p class="pb-3">Response: Make my heart like unto thee.</p>
+        <p>Leader: - Sweet heart of Jesus, (10 times)</p>
+        <p class="pb-3">Response: Be my love (10 times)</p>
+        <p>Leader: - Sweet heart of Mary,</p>
+        <h2 class="pb-3">Response: Be my Salvation</h2>
+
+        <h2>Conclusion: </h2>
+        <p>Leader: - Sacred heart of Jesus, </p>
+        <p class="pb-3">Response: Have mercy on us</p>
+        <p>Leader: - May the Sacred heart of Jesus be everywhere loved.</p>
+        <p>Leader: - Sacred heart of Jesus</p>
+        <p class="pb-3">Response: I have confident in you</p>
+
+        <h2>Leader: - HAIL HOLY QUEEN</h2>
+        <p class="pb-3">Hail, holy Queen, Mother of mercy, hail, our life, our sweetness and our hope. To thee do we
+          cry, poor banished children of Eve to thee do we send up our sighs, mourning and weeping in this valley of
+          tears. Turn
+          then, most gracious Advocate, your eyes of mercy toward us, and after this our exile, show unto us the blessed
+          fruit
+          of thy womb, Jesus, O clement, O loving, O sweet Virgin Mary! Amen</p>
+        <h2>Leader: - Let us pray:</h2>
+        <p class="pb-3">We beseech you O Lord let your Holy Spirit enkindle in our Hearts the fire of love which our
+          Lord Jesus Christ had brought to the world from the bounty of his love; and grant that the flame of His Love
+          may continue
+          to burn unceasingly in our hearts through the same Christ our Lord.</p>
+
+        <h2>Leader: - THE LITANY OF THE SACRED HEART OF JESUS</h2>
+        <p>Leader:-Lord, have mercy on us</p>
+        <p class="pb-3">Response:-Lord, have mercy on us</p>
+
+        <p>Leader:-Christ, have mercy on us</p>
+        <p class="pb-3">Response:-Christ, have mercy on us</p>
+
+        <p>Leader:-Lord, have mercy on us</p>
+        <p class="pb-3">Response:-Lord, have mercy on us</p>
+        <p>Leader:-Christ, hear us</p>
+        <p class="pb-3">Response:-Christ graciously hear us.</p>
+
+        <p>Leader:-God the Father of Heaven, have mercy on us</p>
+        <p class="pb-3">Response (R):-Have mercy on us</p>
+
+        <p>God the Son, Redeemer of the world, R.</p>
+        <p>God the Holy Spirit, R.</p>
+        <p>Holy Trinity, One God, R.</p>
+        <p>Heart of Jesus, Son of the Eternal Father, R.</p>
+        <p>Heart of Jesus, formed by the Holy Spirit in the womb of the</p>
+
+        <p>Virgin Mother, R.</p>
+        <p>Heart of Jesus, substantially united to the word of God, R.</p>
+        <p>Heart of Jesus, of infinite majesty, R.</p>
+        <p>Heart of Jesus, sacred temple of God, R.</p>
+        <p>Heart of Jesus, tabernacle of the Most High, R.</p>
+        <p>Heart of Jesus, house of God and gate of heaven, R.</p>
+        <p>Heart of Jesus, burning furnace of charity, R.</p>
+
+        <p>Heart of Jesus, abode of justice and love, R.</p>
+        <p>Heart of Jesus, full of goodness and love, R.</p>
+        <p>Heart of Jesus, abyss of all virtues, R.</p>
+        <p>Heart of Jesus, most worthy of all praise, R.</p>
+        <p>Heart of Jesus, king and center of all hearts, R.</p>
+        <p>Heart of Jesus, in whom are all the treasures of wisdom and knowledge, R.</p>
+        <p>Heart of Jesus, in whom dwells the fullness of divinity, R.</p>
+
+        <p>Heart of Jesus, in whom the Father was well pleased, R.</p>
+        <p>Heart of Jesus, of whose fullness we have all received, R.</p>
+        <p>Heart of Jesus, desire of everlasting life, R.</p>
+        <p>Heart of Jesus, patient and most merciful, R.</p>
+        <p>Heart of Jesus, enriching all who invoke Thee, R.</p>
+        <p>Heart of Jesus, fountain of life and holiness, R.</p>
+        <p>Heart of Jesus, propitiation for our sins, R.</p>
+
+        <p>Heart of Jesus, loaded down with reproaches, R.</p>
+        <p>Heart of Jesus, bruised for our offenses, R.</p>
+        <p>Heart of Jesus, obedient unto death, R.</p>
+        <p>Heart of Jesus, pierced with a lance, R.</p>
+        <p>Heart of Jesus, source of consolation, R.</p>
+
+        <p>Heart of Jesus, our life and resurrection, R.</p>
+        <p>Heart of Jesus, our peace and reconciliation, R.</p>
+        <p>Heart of Jesus, victim for our sins, R.</p>
+        <p>Heart of Jesus, salvation of those who trust in Thee, R.</p>
+        <p>Heart of Jesus, hope of those who die in Thee, R.</p>
+        <p class="pb-3">Heart of Jesus, delight of all saints, R.</p>
+
+        <h2>Leader:- Lamb of God, who takes away the sins of the world,</h2>
+        <p class="pb-3">Response:- Spare us, o Lord.</p>
+
+        <h2>Leader:- Lamb of God, who takes away the sins of the world,</h2>
+        <p class="pb-3">Response:- graciously hear us, O Lord.</p>
+
+        <h2>Leader:- Lamb of God, who takes away the sins of the world,</h2>
+        <p class="pb-3">Response:- Have mercy on us.</p>
+
+        <h2>Leader:- Jesus, meek and humble of heart</h2>
+        <p class="pb-3">Response:- Make our hearts like to yours.</p>
+
+
+        <h2>Leader: - Let us Pray</h2>
+        <h2>All:-</h2>
+        <p class="pb-3">O Almighty and eternal God, look upon the Heart of Your most beloved Son and upon the praises
+          and satisfaction which He offers You in the name of sinners; and to those who implore Thy mercy, in Your great
+          goodness, grant forgiveness in the name of the same Jesus Christ, Your Son, who lives and reigns with You
+          forever and ever. Amen. Sacred heart of Jesus, I believe in your love for me.
+        </p>
+        <h2>Leader: - Act of reparation to Jesus in the Blessed Sacrament</h2>
+        <h2>All:-</h2>
+        <p class="pb-3">Leader: - Act of reparation to Jesus in the Blessed Sacrament
+          Divine Savour, who by an incompressible effect of your love towards men, dost dwell in the Most Blessed
+          Sacrament of the alter and who, instead of the respect and adoration which ought to be rendered you, receive
+          too often butt indifference, contempt, and outrages, I cast myself before you here present in the Holy
+          Eucharist, in order to make reparation for all that you dost suffer incessantly in this adorable Sacrament. I
+          desire first of all, to make reparation for all the irreverence’s which I myself have committed in your
+          presence; for the scandal which I have given: for my want of desire to approach your Holy Table and to assist
+          at Holy Mass; for my lack of devotion in receiving you and in attending the Holy Sacrifice; for the little
+          fruit which I have drawn from these inestimable sources of grace; for the sacrileges which I may have
+          committed; and lastly for all the outrages of which I may have guilty or in which I may have taken any part. I
+          desire also to make reparation for all the insults heaped upon you in this august sacrament since its
+          institution; for the irreverence you dost suffer every day throughout the world; and finally for all the
+          injuries, affronts and persecution of which you have always been the object in the sacrament of your love.
+          Prostrate before you, I most humbly crave your pardon. I acknowledge that you are worthy of all honour. All
+          praise and all glory. You are the king of heaven and earth, though hidden under the Eucharist veil and, as
+          such I offer you the most reverential and loving reparation. I concentrate myself wholly to you; I place
+          myself in spirit and in desire before all the tabernacles of the world in which you dost dwell sacramentally.
+          There to render you all glory. I unite my homage to that which you have received and will receive from all
+          your creatures, throughout times and eternity. To the lamb that was immolated for us: power, divinity, wisdom,
+          strength, honour, glory and benediction forever and evere! Amen
+          Leader: - Prayer to God the Holy Spirit.
+        </p>
+        <h2>Leader: - Prayer to God the Holy Spirit.</h2>
+        <p class="pb-3">Holy Spirit of God , love of God, silent, secret, all preserving, breathing where you lay, I am
+          none of these, I need them all, sincerely I want them I do believe sincerely I want them. You are the father
+          of the poor, you do not fail, and will you fail me? That I may never fail you. I cannot trust myself that I
+          may never do wrong, that I may be wise. Expressing our longings, you are wisdom, you are love, you are
+          strength and fidelity, according to my place in life, that I may love, truly not falsely, that I may be
+          faithful to God, to man, that I may have strength, sufficient for the task you give me, and may use it,
+          creator Spiritus</p>
+        <h2>Leader: - Prayer to God the Father</h2>
+        <h2>All:-</h2>
+        <p class="pb-3">My Father, you are so great, I am so little, you are the first and the last, the beginning and
+          the end Almighty, Everlasting, which you have permitted, that I might learn, it is necessary to be taught
+          more? I can do nothing of myself, I cannot desire to do anything, I cannot keep from harm you put me here, you
+          gave me this state of life. You want me back. I want to be your, I want to do your work. When the end comes, I
+          want to go to you. And yet father, you made me, the creature that I am, with my powers, my weakness, because
+          you wanted me, even me, but without you I cannot, you will not fail me? You cannot fail me, let me not fail
+          you, I know my weakness. I have learnt it from my falls help me that I may desire it, give me the desire of
+          sacrifice at least the desire of desire I am an infant asking for bread will my father give me a stone? </p>
+        <h2 class="pb-3">Leader: - Our father…</h2>
+        <h2>Leader: - ACT OF CONSECRATION (Saint Margaret Mary)</h2>
+        <h2>All:-</h2>
+        <p class="pb-3">O Jesus, infinite love, I wish to consecrate myself to you with all the fervor of my soul. I
+          offer you my entire being on the altar of your heart, where you dost sacrifice yourself through love me. I
+          offer you my body which I
+          will respect as the temple wherein you dwell; my soul which I will tend as a garden where you will come to
+          take your
+          repose, my sense which I will guard because they are the doors through which temptation may enter; the powers
+          of my soul which
+          I will open to the inspiration of your grace; my thoughts which shall no longer be attached to the illusions
+          of the
+          world; my desires which shall tend towards the happiness of heaven; my virtues to flourish under the shade of
+          your
+          protection; my passions which I will submit to the yoke of your commandment, even my sins which I will detest
+          as long as my
+          heart is capable of hatred and for which I will weep until the source of my tears fails. From to-day my heart
+          desires
+          to be entirely yours for ever, as you, O divine Heart, had wished to be mine; may it be forever yours without
+          fault
+          tepidity. I will serve you for those who offend you; I will love you for those who hate you; I will pray and
+          sacrifice
+          myself for all who blaspheme you. Do you, who search the depths of heart and who know the sincerity of my
+          desires, grant
+          me the grace which I gives an all- powerful strength to weak, give me the victory in the battle of life, that
+          one day
+          you may crown me with an immortal crown in the dwelling place of your glory. May you be rewarded, and Your
+          sacred
+          Heart my eternal Paradise. Your Kingdom Come!</p>
+
+        <h2>Leader: - For those in the agony of death and sinners</h2>
+        <p class="pb-3">Our Father… Hail Mary… Glory be…</p>
+
+        <h1>Leader: - For the Universal reign of the Sacred Heart especially by Daily Communion, the Holy Hour and the
+          Enthronement of Sacred heart,</h1>
+        <p class="pb-3">Our Father… Hail Mary… Glory be…</p>
+
+        <h1>Leader: - For the intentions of all here present.</h1>
+        <p class="pb-3">Our Father… Hail Mary… Glory be…</p>
+
+        <h1>Leader: - For our Country.</h1>
+        <p class="pb-3">Our Father… Hail Mary… Glory be…</p>
+
+        <p>Leader:- Most Sacred Heart of Jesus, (5 times)</p>
+        <p class="pb-3">Response:-Your Kingdom come (5 times) </p>
+
+        <p>Leader:- Immaculate Heart of Mary,(3 times). </p>
+        <p class="pb-3">Response:- Pray for us. (3 times). </p>
+
+        <p>Leader:- St. Joseph </p>
+        <p class="pb-3">Response:- Pray for us.
+
+        </p>
+        <p>St. Margaret Mary,</p>
+        <p class="pb-3">Response:- Pray for us.
+        </p>
+
+        <h2>Leader: - PRAYER FOR VOCATIONS</h2>
+        <h2>All:-</h2>
+        <p class="pb-3">Most Sacred heart of Jesus, through the Immaculate Heart of Your Mother, send forth the light of
+          Your grace to enlighten my mind to know your will in regard to my state in life Give me courage to live and
+          die ever striving to advance Your reign as King in every home and in all the world. Dear Jesus, zealous
+          apostles of your Sacred Heart are needed. The field is already ripe for the harvest of souls. Send laborers
+          into the vineyard, and if it be Your will that apostles be drawn from among Your Night Adorers, grant that we
+          may be awake to your call: “ come, follow Me”, and become, in spirit and in truth, perpetual adorers of Your
+          Sacred Heart. Most Sacred Heart of Jesus, Your Kingdom come in me and through me. Amen! (Nobert McCarthy,
+          SS.CC.)</p>
+
+        <h2>Leader: - EFFICACIOUS PRAYER TO THE SACRED HEART,</h2>
+        <h2>All:-</h2>
+        <p class="pb-3">O Divine Jesus, Who has said:” Ask, and you shall receive: seek and you shall find; Knock, and
+          it shall be opened unto you, “behold us prostrate at your feet. Animated with a lively faith and confidence in
+          those promises, dictated by your sacred Heart and pronounced by your adorable lips. I come to ask (Here
+          mention your request). From whom shall I ask, O sweet Jesus, if not from you Whose Heart is inexhaustible
+          source of all grace and merit? Where shall I SEEK if not in the treasure which contains all the riches of your
+          clemency and bounty? Where shall I KNOCK, if it be not at the door of your sacred Heart, through which God
+          himself comes us and through which we go to God? To you then O Heart of Jesus, I have recourse. In you I find
+          consolation when afflicted, protection when prosecuted, strength when overwhelmed with trials, and light in
+          doubt and darkness. I firmly believe you can bestow upon me the grace I implore, even though it should require
+          a miracle, you are only to will it and my prayers is granted, I know I am most unworthy of Your Favors, o
+          Jesus! But this is not reason for me to be discouraged. You are the God of mercies and you will not refuse a
+          contrite and humble heart. Cast upon me a look of pity, I implore you, and your compassionate Heart will find
+          in my miseries and weakness a pressing motive for granting my petition. But O Sacred Heart, whatever may be
+          your decision with regard to my request, I will never cease to adore, love, praise and serve you. Deign my
+          Jesus, to accept this act of perfect submission to the decrees of your Adorable Heart, which I sincerely
+          desire may be fulfilled in and by me and all your creatures forever and ever (Amen).</p>
+
+        <h2>Leader: - PRAYERS TO THE SACRED HEART</h2>
+        <h2>All:-</h2>
+        <p class="pb-3">Dear Sacred Heart of Jesus, I have asked you for many favors, nut I beg for this one (here
+          mention the intention). Take it, place it in your Open-broken Heart, and when the external Father sees it,
+          covered with the mantle of your most precious blood, He cannot refuse it, for then it is your prayer, not
+          mine. </p>
+
+        <h2>Leader: - Dear Scared Heart of Jesus, (3 times)</h2>
+        <p class="pb-3">I place my trust in (say 3 times).</p>
+
+        <h2>Leader: - PRAYER FOR NIGEREIA</h2>
+        <p class="pb-3">Almighty and Eternity God, Father of all nations and people, look down, we beseech you, in your
+          bountiful mercy, your people of Nigeria, who now take our place among the nation of the world, that our
+          political freedom may, by your blessing, be an instrument whereby we may live more worthily, in accordance
+          with the liberty of the children of God. Inspire our rulers to always legislate for our temporal good ever in
+          harmony with the Eternal Good for which you have created us. Bountifully bestow your gift of faith on all our
+          people. Fortify us against the attacks of evil from within and from without, and make us wise to seek the
+          truth of all things and live honestly according to your commandment. Inflame our heart in supernatural
+          charity, which will overcome dissensions, rivalries and resentment of tribe and province, and draw all
+          together into a union of true brotherhood, which by your grace will bring about that all may be one in you our
+          Common Father. Bless our nation that it may in harmony with other nations. Enlighten and guide our rulers so
+          that they may worthily fulfill their mission, by helping all the citizens to achieve earthly well-being, and
+          by assisting them to reach their supernatural destiny of citizenship of the kingdom of Heaven for ever. Amen.
+          (Composed by His Holiness Pope John XXIII)</p>
+
+        <h2>Leader: - SPECIAL PRAYER FOR THE REIGN OF CHRIST ON EARTH</h2>
+        <p class="pb-3">O Holy Spirit of Truth come into our hearts, shed the brightness of the light on all nations
+          that they may become one in faith and pleasing to Thee, this we ask through Jesus Christ our Lord Amen. Sacred
+          Heart of Jesus, drive away the power of darkness on earth and bring all nations under one flock and one
+          chaptered. Amen.</p>
+
+        <h2>Leader: - Prayer for Peace in our family</h2>
+        <h2>all;-</h2>
+        <p class="pb-3">O God,...</p>
+
+        <h2>Leader: - CLOSING PRAYER TO THE BLESSED SACRAMENT </h2>
+        <p class="pb-3">All: As this hour of adoration closes, O Jesus* I renew my faith and trust in You* I am
+          refreshed after these moments with You* and I count myself among a privileged number,* even as Your disciples
+          were,* who shared Your actual presence* Realizing that my visit to You is of little avail* unless I try to
+          live better life and set a better example,* I am resolved to go forth again to my duties and my concerns* with
+          a renewed spirit of perseverance and good will,* in my daily life I will try to love and serve God well,* and
+          love my neighbor also*, for these two things go together. * I will try to be a true disciple, indeed. Help me,
+          O Jesus,* in this my resolution.</p>
+        <p class="pb-3">Bless me dear lord before I go, and bless not me alone, O Lord, but all as well as who are here
+          present, and all who could not come, especially the sick and the dying. Bless our homes and all the children
+          there. Bless all our
+          life and the hour of our death. Grant rest to the souls of the faithful departed, and bring them into the
+          light of your
+          divine glory. So may we who have worshipped you and been blessed by you here on earth come to behold the
+          radiant
+          glory of your unveiling countenance in heaven for ever and ever. Amen. Sacred heart of Jesus, *your kingdom come (3 times).
+        </p>
+        <h2>Leader: - For the intentions of the Holy Father the Pope.</h2>
+        <p class="pb-3">Our Father… Hail Mary… Glory be…</p>
+
+        <h2>Final Blessing</h2>
+        <p>May the peace of the most sacred heart of Jesus dwell with us, (Amen).</p>
+        <p>May his love enkindle in our hearts (Amen).</p>
+        <p>May his sorrow console us (Amen).</p>
+        <p>May his virtues enlighten us in our words and deeds (Amen).</p>
+        <p>May the Joy of the heaven be our eternal reward (Amen).</p>
+        <p class="pb-3">And may the grace and blessings of God the Father and of the Son and of the Holy Spirit be with us now and forever*. Amen</p>
+
+        <h2 class="pb-3">Closing Hymn: (page 321, 322, 323)</h2>
+        <h2>Leader:-Sacred heart of Jesus,(3 times)</h2>
+        <p class="pb-3">Response:-Have mercy on us (3 times)</p>
+       
+        <h2>Leader:-Immaculate Heart of Mary</h2>
+        <p class="pb-3">Response:-Pray us </p>
+
+        <h2>Leader:-Sacred heart of Jesus,</h2>
+        <p class="pb-3">Response:-your kingdom come </p>
+
+
+
+        <h2 aria-colspan="pb-3">In the Name of the Father and of the Son and of the Holy Spirit*. Amen</h2>
+
+
+
+
+
+
+
+
+      </div>
+
+    </section>
 
     <section id="nav">
       <div
         class="open-setting w-full lg:w-1/4 overflow-hidden  fixed bottom-0 h-0 left-0 duration-500 transition-all bg-white text-black z-20">
         <div class="settings text-xl text-white p-2.5 mb-1 flex justify-between items-center">
-          <h2>Settings</h2>
-          <div class="close-setting cursor-pointer"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-              stroke-width="1.5" stroke="currentColor" class="size-6">
+          <h3>Settings</h3>
+          <div class="close-setting cursor-pointer"><svg xmlns="http://www.w3.org/2000/svg" fill="none"
+              viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
               <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
             </svg>
           </div>
         </div>
-      
-        <div class="setting-container *:pl-3 *:pb-1.5">
-          <div class="flex justify-between items-center">
-            <div class="flex justify-center items-center *:not-last:pr-1.5 pb-1">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-                class="size-6">
+
+        <div class="setting-container">
+
+          <div class="pl-3 pb-1.5 flex justify-between items-center">
+            <div class="flex justify-center items-center pb-1">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="size-6 pr-1.5">
                 <path stroke-linecap="round" stroke-linejoin="round"
                   d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
               </svg>
-      
-      
-              <h2>User Account</h2>
-      
-      
+
+
+              <h3>User Account</h3>
+
             </div>
-      
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-              class="size-6 ">
+
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="size-6 ">
               <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
             </svg>
           </div>
-      
-          <div class="flex justify-between items-center">
-            <div class="flex justify-center items-center *:not-last:pr-1.5 pb-1">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-                class="size-6">
+
+          <div class="pl-3 pb-1.5 flex justify-between items-center">
+            <div class="flex justify-center items-center  pb-1">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="size-6 pr-1.5">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
                 <path stroke-linecap="round" stroke-linejoin="round"
                   d="M15.91 11.672a.375.375 0 0 1 0 .656l-5.603 3.113a.375.375 0 0 1-.557-.328V8.887c0-.286.307-.466.557-.327l5.603 3.112Z" />
               </svg>
-      
-      
-              <h2>Play Audio</h2>
-      
-      
+
+
+              <h3>Play Audio</h3>
+
             </div>
-      
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-              class="size-6 ">
+
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="size-6 ">
               <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
             </svg>
           </div>
-      
-          <div class="flex justify-between items-center">
-            <div class="flex justify-center items-center *:not-last:pr-1.5 pb-1">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-                class="size-6">
+
+          <div class="pl-3 pb-1.5 flex justify-between items-center">
+            <div class="flex justify-center items-center  pb-1">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="size-6 pr-1.5">
                 <path stroke-linecap="round" stroke-linejoin="round"
                   d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582m15.686 0A11.953 11.953 0 0 1 12 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0 1 21 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0 1 12 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 0 1 3 12c0-1.605.42-3.113 1.157-4.418" />
               </svg>
-      
-              <h2>Languages</h2>
-      
-      
+
+              <h3>Languages</h3>
+
             </div>
-      
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-              class="size-6 ">
+
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="size-6 ">
               <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
             </svg>
           </div>
-      
-          <div class="flex justify-between items-center pr-2">
-            <div class="flex justify-center items-center *:not-last:pr-1.5 pb-1">
-              <p class="font-sans">Aa</p>
-      
-      
-              <h2>Font Size</h2>
-      
-      
+
+          <div class="pl-3 pb-1.5 flex justify-between items-center pr-2">
+            <div class="flex justify-center items-center pb-1">
+              <h3 class="font-sans pr-1.5">Aa</h3>
+
+
+              <h3>Font Size</h3>
+
             </div>
             <form>
-      
+
               <input type="range" name="range" id="range-val" min="1" max="1.5" step="0.01" value="0">
             </form>
-      
+
           </div>
-      
-          <div class="flex justify-between items-center pr-2">
-            <div class="flex justify-center items-center *:not-last:pr-1.5 pb-1">
+
+          <div class="pl-3 pb-1.5 flex justify-between items-center pr-2">
+            <div class="flex justify-center items-center pb-1">
               <svg id="darkMode" xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" stroke-width="1.5"
-                stroke="currentColor" class="size-7 black">
+                stroke="currentColor" class="size-7 black pr-1.5">
                 <path stroke-linecap="round" stroke-linejoin="round"
                   d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z" />
               </svg>
-      
-              <h2>brightness</h2>
-      
-      
+
+              <h3>brightness</h3>
+
             </div>
-      
+
             <input type="range" name="range" min="0" max="100" id="range" value="50">
           </div>
-      
-          <div class="flex justify-between items-center">
-            <div class="flex justify-center items-center *:not-last:pr-1.5 pb-1">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-                class="size-6">
+
+          <div class="pl-3 pb-1.5 flex justify-between items-center">
+            <div class="flex justify-center items-center pb-1">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="size-6 pr-1.5">
                 <path stroke-linecap="round" stroke-linejoin="round"
                   d="M12 6v12m-3-2.818.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
               </svg>
-      
-      
-      
-              <h2>Subscription</h2>
-      
-      
+
+
+              <h3>Subscription</h3>
+
             </div>
-      
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-              class="size-6 ">
+
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="size-6 ">
               <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
             </svg>
           </div>
-      
-          <div class="flex justify-between items-center">
-            <div class="flex justify-center items-center *:not-last:pr-1.5 pb-1">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-                class="size-6">
+
+          <div class="pl-3 pb-1.5 flex justify-between items-center">
+            <div class="flex justify-center items-center  pb-1">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="size-6 pr-1.5">
                 <path stroke-linecap="round" stroke-linejoin="round"
                   d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z" />
               </svg>
-      
-      
-              <h2>Rate use</h2>
-      
-      
+
+
+              <h3>Rate use</h3>
+
             </div>
-      
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-              class="size-6 ">
+
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="size-6 ">
               <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
             </svg>
           </div>
-      
-          <div class="flex justify-between items-center">
-            <div class="flex justify-center items-center *:not-last:pr-1.5 pb-1">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-                class="size-6">
+
+          <div class="pl-3 pb-1.5 flex justify-between items-center">
+            <div class="flex justify-center items-center pb-1">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="size-6 pr-1.5">
                 <path stroke-linecap="round" stroke-linejoin="round"
                   d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z" />
               </svg>
-      
-      
-      
-              <h2>Privacy</h2>
-      
-      
+
+
+              <h3>Privacy</h3>
+
             </div>
-      
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-              class="size-6 ">
+
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="size-6 ">
               <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
             </svg>
           </div>
-      
+
         </div>
-      
-      
+
+
       </div>
-    </section> 
+    </section>
   </main>
 
 
@@ -405,18 +963,18 @@
 
         <section id="terms&privacy">
 
-          <ul class="flex justify-center items-center *:not-last:pr-3 pb-2">
+          <ul class="flex justify-center items-center">
             <li>
-              <a class="hover:text-gray-400" href="#">Terms</a>
+              <a class="pr-3 pb-2 hover:text-gray-400" href="#">Terms</a>
             </li>
             <li>
-              <a class="hover:text-gray-400" href="#">Privacy</a>
+              <a class="pr-3 pb-2 hover:text-gray-400" href="#">Privacy</a>
             </li>
             <li>
-              <a class="hover:text-gray-400" href="#">Securty</a>
+              <a class="pr-3 pb-2 hover:text-gray-400" href="#">Securty</a>
             </li>
             <li>
-              <a class="hover:text-gray-400" href="#">Contact</a>
+              <a class="pr-3 pb-2 hover:text-gray-400" href="#">Contact</a>
             </li>
           </ul>
 
@@ -424,15 +982,16 @@
         </section>
 
         <section id="mobile-app">
-          <div class="flex justify-center items-center">
-            <img class="w-20 h-7 pr-2 cursor-pointer" src="./src/Images/Apple store.webp" alt="apple-store">
-            <img class="w-20 h-7 cursor-pointer" src="./src/Images/google Play store.webp" alt="google-store">
+          <div class="flex justify-center items-center pb-5">
+            <img onclick="alert('Coming Soon')" class="w-20 h-7 pr-2 cursor-pointer" src="./src/Images/Apple store.webp"
+              alt="apple-store">
+            <img onclick="alert('Coming Soon')" class="w-20 h-7 cursor-pointer"
+              src="./src/Images/google Play store.webp" alt="google-store">
           </div>
         </section>
       </div>
 
     </section>
-
   </footer>
   <script type="module" src="./src/script.js"></script>
 </body>
