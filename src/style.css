@@ -1,0 +1,11 @@
+.container{
+  width: 92%;
+  margin: 0 auto;
+}
+.settings {
+  background: conic-gradient(darkred, darkblue, darkblue, darkred, darkred);
+}
+.pray {
+  display: grid;
+  grid-template-columns: 70% 30%;
+}
