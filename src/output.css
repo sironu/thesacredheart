@@ -364,6 +364,9 @@
   .w-full {
     width: 100%;
   }
+  .max-w-fit {
+    max-width: fit-content;
+  }
   .border-collapse {
     border-collapse: collapse;
   }
