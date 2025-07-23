@@ -36,55 +36,14 @@ p{
 }
 
 
-/* Styles for the clickable summary element*/
+
 summary {
   font-weight: bold;
-  cursor: pointer;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  transition: color 0.2s ease;
-  
-
-  /* Remove the default marker */
-  &::marker {
-    content: '';
-  }
-
-  &:last-child {
-    margin-bottom: 0;
-  }
-
-  &:hover {
-
-    color: gray;
-    outline: none;
-  }
+ 
+}
+details{
+  padding: 0 0 1rem 0;
 }
 
 
 
-/* Styles for the collapsible <details> container */
-details {
-  margin-bottom: 1em;
-
-  &:last-child {
-    margin-bottom: 0;
-  }
-
-  .open-icon {
-    display: none;
-  }
-
-  &[open] {
-    .open-icon {
-      display: inline;
-    }
-
-    .closed-icon {
-      display: none;
-    }
-  }
-
-  
-}
