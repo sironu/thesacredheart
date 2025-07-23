@@ -244,6 +244,9 @@
   .mb-1 {
     margin-bottom: calc(var(--spacing) * 1);
   }
+  .mb-2 {
+    margin-bottom: calc(var(--spacing) * 2);
+  }
   .mb-9 {
     margin-bottom: calc(var(--spacing) * 9);
   }
@@ -351,6 +354,15 @@
   .justify-start {
     justify-content: flex-start;
   }
+  .gap-3 {
+    gap: calc(var(--spacing) * 3);
+  }
+  .gap-4 {
+    gap: calc(var(--spacing) * 4);
+  }
+  .gap-x-3 {
+    column-gap: calc(var(--spacing) * 3);
+  }
   .overflow-hidden {
     overflow: hidden;
   }
@@ -447,6 +459,12 @@
   .pb-5 {
     padding-bottom: calc(var(--spacing) * 5);
   }
+  .pb-\[1px\] {
+    padding-bottom: 1px;
+  }
+  .pb-\[pb\] {
+    padding-bottom: pb;
+  }
   .pl-2 {
     padding-left: calc(var(--spacing) * 2);
   }
@@ -510,6 +528,9 @@
   .text-white {
     color: var(--color-white);
   }
+  .italic {
+    font-style: italic;
+  }
   .underline {
     text-decoration-line: underline;
   }
@@ -571,6 +592,27 @@
     &:hover {
       @media (hover: hover) {
         color: var(--color-white);
+      }
+    }
+  }
+  .hover\:italic {
+    &:hover {
+      @media (hover: hover) {
+        font-style: italic;
+      }
+    }
+  }
+  .hover\:underline {
+    &:hover {
+      @media (hover: hover) {
+        text-decoration-line: underline;
+      }
+    }
+  }
+  .hover\:underline-offset-1 {
+    &:hover {
+      @media (hover: hover) {
+        text-underline-offset: 1px;
       }
     }
   }
