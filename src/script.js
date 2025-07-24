@@ -68,25 +68,22 @@ const thursdayAdoration = document.querySelector("#thursday-adoration");
 const mainPages = document.querySelectorAll(".landing-page");
 const thurdayPrayerButton = document.querySelector(".thurday-prayer-button");
 
+thurdayPrayerButton.addEventListener("click", () => {
+  thursdayAdoration.classList.toggle("hidden");
+  for (const mainPage of mainPages) mainPage.classList.toggle("hidden");
+  scrollTo({ top: 0, behavior: "smooth" });
+});
+document.getElementById("exit").onclick = function toggleMain() {
+  thursdayAdoration.classList.toggle("hidden");
+  for (const mainPage of mainPages) mainPage.classList.toggle("hidden");
+  scrollTo({ top: 0, behavior: "smooth" });
+};
 
-
-  thurdayPrayerButton.addEventListener("click", () => {
-    thursdayAdoration.classList.toggle("hidden");
-    for (const mainPage of mainPages) mainPage.classList.toggle("hidden");
-    scrollTo({ top: 0, behavior: "smooth" });
-  });
-  document.getElementById("exit").onclick = function toggleMain() {
-    thursdayAdoration.classList.toggle("hidden");
-    for (const mainPage of mainPages) mainPage.classList.toggle("hidden");
-    scrollTo({ top: 0, behavior: "smooth" });
-  };
-
-  document.getElementById("finish").onclick = function toggleMain() {
-    thursdayAdoration.classList.toggle("hidden");
-    for (const mainPage of mainPages) mainPage.classList.toggle("hidden");
-    scrollTo({ top: 0, behavior: "smooth" });
-  };
-
+document.getElementById("finish").onclick = function toggleMain() {
+  thursdayAdoration.classList.toggle("hidden");
+  for (const mainPage of mainPages) mainPage.classList.toggle("hidden");
+  scrollTo({ top: 0, behavior: "smooth" });
+};
 
 const openNav = document.querySelector(".open-nav");
 const openSetting = document.querySelector(".open-setting");
@@ -99,20 +96,23 @@ openNav.addEventListener("click", () => {
   openSetting.classList.toggle("h-[338px]");
 });
 
+// let scrollPosition = scrollY;
 
-let isScrolling = false;
-let scrollTimeout;
-const liveChat = document.querySelector('.live-chat')
+// window.addEventListener("scroll", () => {
+//   const headerContainer = document.querySelector(".header-container");
+ 
+
+//   if (isScrolling) {
+//     headerContainer.classList.replace("h-[10vh]", "h-0");
+//   }
+//   else {
+//     headerContainer.classList.replace("h-[10vh]", "h-0");
+//   }
+// });
 
 window.addEventListener("scroll", () => {
-  isScrolling = true;
-  clearTimeout(scrollTimeout);
-  scrollTimeout = setTimeout(() => {
-    isScrolling = false;
-     liveChat.classList.add("w-[52px]");
-  }, 300000);
-
-  if (isScrolling) {
-    liveChat.classList.remove("w-[52px]");
-  }
+  const liveChat = document.querySelector(".live-chat");
+  scrollY > 300
+    ? liveChat.classList.add("w-[52px]")
+    : liveChat.classList.remove("w-[52px]");
 });
