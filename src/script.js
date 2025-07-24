@@ -98,3 +98,21 @@ closeSetting.addEventListener("click", () => {
 openNav.addEventListener("click", () => {
   openSetting.classList.toggle("h-[338px]");
 });
+
+
+let isScrolling = false;
+let scrollTimeout;
+const liveChat = document.querySelector('.live-chat')
+
+window.addEventListener("scroll", () => {
+  isScrolling = true;
+  clearTimeout(scrollTimeout);
+  scrollTimeout = setTimeout(() => {
+    isScrolling = false;
+     liveChat.classList.add("w-[52px]");
+  }, 300000);
+
+  if (isScrolling) {
+    liveChat.classList.remove("w-[52px]");
+  }
+});
