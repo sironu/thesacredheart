@@ -1,6 +1,6 @@
-let todaysDates = new Date();
-let x = todaysDates.toDateString();
-document.getElementById("date").textContent = x;
+// let todaysDates = new Date();
+// let x = todaysDates.toDateString();
+// document.getElementById("date").textContent = x;
 
 const textOutput = document.querySelector(".text-output");
 let text = textOutput.innerHTML;
@@ -16,52 +16,40 @@ function typeIT() {
 }
 typeIT();
 
-document.addEventListener("DOMContentLoaded", function () {
-  new Splide("#splide", {
-    type: "loop",
-    perPage: 3, // Number of items per row
-    perMove: 1, // Moves in sets of 3
-    gap: "10px",
-    autoplay: true,
-    breakpoints: {
-      992: { perPage: 1 },
-    },
-  }).mount();
-});
-
 const path = document.querySelector("path");
 let darkMode = document.getElementById("darkMode");
 darkMode.addEventListener("click", () => {
   if (darkMode.classList.contains("black")) {
     darkMode.setAttribute("fill", "white");
     darkMode.classList.remove("black");
-    // path.fill = "white";
-
     document
       .querySelector("body")
       .classList.remove("bg-[#222]", "text-gray-200");
   } else {
     darkMode.setAttribute("fill", "black");
-    // path.fill = "black";
     darkMode.classList.add("black");
     document.querySelector("body").classList.add("bg-[#222]", "text-gray-200");
   }
 });
 
-const pTags = document.getElementsByTagName([..."p"]);
-const h2s = document.querySelectorAll("h2");
+const objectArrays = [
+  { elements: [...document.getElementsByTagName("p")] },
+  { elements: [...document.getElementsByTagName("h2")] },
+  { elements: [...document.getElementsByClassName("link")] },
+];
 
-const range = document.querySelector("#range-val");
-
-range.addEventListener("input", () => {
-  for (const h2 of h2s) {
-    h2.style.fontSize = `${range.value}rem`;
+const font_size = document.querySelector("#font-size");
+font_size.addEventListener("input", () => {
+  for (const { elements } of objectArrays) {
+    elements.map((element) => (element.style.fontSize = `${font_size.value}rem`));
   }
-  for (const pTag of pTags) {
-    pTag.style.fontSize = `${range.value}rem`;
-  }
+})
+const brightness = document.querySelector("#brightness");
+brightness.addEventListener("input", () => {
 
-  // console.log(`${range.value}rem`);
+  document.querySelector("html").style.filter = `brightness(${brightness.value}%)`;
+  console.log(" Brightness: ",  document.querySelector("html").style.filter);
+
 });
 
 const thursdayAdoration = document.querySelector("#thursday-adoration");
@@ -96,23 +84,39 @@ openNav.addEventListener("click", () => {
   openSetting.classList.toggle("h-[338px]");
 });
 
-// let scrollPosition = scrollY;
+let initialPosition = 0;
 
-// window.addEventListener("scroll", () => {
-//   const headerContainer = document.querySelector(".header-container");
- 
-
-//   if (isScrolling) {
-//     headerContainer.classList.replace("h-[10vh]", "h-0");
-//   }
-//   else {
-//     headerContainer.classList.replace("h-[10vh]", "h-0");
-//   }
-// });
+window.addEventListener("scroll", () => {
+  if (scrollY > 100) {
+    const headerContainer = document.querySelector(".header-container");
+    const currentPosition = scrollY;
+    if (currentPosition > initialPosition) {
+      headerContainer.classList.replace("h-[10vh]", "h-0");
+    } else {
+      headerContainer.classList.replace("h-0", "h-[10vh]");
+    }
+    initialPosition = currentPosition;
+  }
+});
 
 window.addEventListener("scroll", () => {
   const liveChat = document.querySelector(".live-chat");
   scrollY > 300
     ? liveChat.classList.add("w-[52px]")
     : liveChat.classList.remove("w-[52px]");
+});
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  new Splide("#splide", {
+    type: "loop",
+    perPage: 3,
+    perMove: 1,
+    gap: "10px",
+    autoplay: true,
+    breakpoints: {
+      768: { perPage: 1 },
+      992: { perPage: 2 },
+    },
+  }).mount();
 });

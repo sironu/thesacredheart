@@ -8,16 +8,20 @@
   <link rel="stylesheet" href="./src/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
 
+  
+
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
   <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
 
 
+  
   <title>Sacred Heart Prayers</title>
 </head>
 
 <body>
   <header>
-    <div class="h-[10vh] header-container  grid place-items-center transition-all duration-1000 fixed left-0 top-0 w-full z-20"
+    <div
+      class="h-[10vh] header-container overflow-hidden  grid place-items-center  duration-500 fixed left-0 top-0 w-full z-20"
       style="background: conic-gradient(darkred, darkblue, darkblue, darkred, darkred)">
       <nav class="w-[92%] mx-auto flex text-white justify-between items-center">
         <div class="open-nav cursor-pointer">
@@ -25,7 +29,7 @@
           <div class="w-6 h-[3px] bg-white  my-1"></div>
           <div class="w-6 h-[3px] bg-white"></div>
         </div>
-        <h6 id="date" class="text-white">Today's Date</h6>
+        <h6 id="date" class="text-white uppercase">Sacred Hearts</h6>
 
         <div class="dayLightSavings cursor-pointer">
           <svg id="darkMode" xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" stroke-width="1.5"
@@ -45,7 +49,7 @@
 
         <div class="container">
           <div class="h-[5.5vh] w-full flex justify-center items-center">
-            <h1 class="font-bold text-output text-center">THE TWO HEARTS OF LOVE</h1>
+            <h1 class="font-bold text-output text-center capitalize">TWO HEARTS OF LOVE</h1>
           </div>
         </div>
 
@@ -141,25 +145,25 @@
 
       <section id="pray" class="mb-9">
         <em>
-          <li class="container thurday-prayer-button underline my-1 cursor-pointer thusday-adoration py-2 pl-2 ">
+          <li class="link container thurday-prayer-button underline my-1 cursor-pointer thusday-adoration py-2 pl-2 ">
             Thursday Adoration...
           </li>
           <li onclick="alert('Coming Soon')"
-            class="container underline my-1 cursor-pointer friday-adoration py-2 pl-2 ">
+            class="link container underline my-1 cursor-pointer friday-adoration py-2 pl-2 ">
             First Friday Adoration...
           </li>
           <li onclick="alert('Coming Soon')"
-            class="container underline my-1 cursor-pointer saturday-adoration py-2 pl-2 ">
+            class="link container underline my-1 cursor-pointer saturday-adoration py-2 pl-2 ">
             First Saturday Adoration...
           </li>
           <li onclick="alert('Coming Soon')"
-            class="container underline my-1 cursor-pointer sunday-adoration py-2 pl-2 ">
+            class="link container underline my-1 cursor-pointer sunday-adoration py-2 pl-2 ">
             First Sunday Rosary Procession...
           </li>
-          <li onclick="alert('Coming Soon')" class="container underline my-1 cursor-pointer novena py-2 pl-2 ">
+          <li onclick="alert('Coming Soon')" class="link container underline my-1 cursor-pointer novena py-2 pl-2 ">
             Sacred Heart Novena...
           </li>
-          <li onclick="alert('Coming Soon')" class="container underline my-1 cursor-pointer rosary py-2 pl-2 ">
+          <li onclick="alert('Coming Soon')" class="link container underline my-1 cursor-pointer rosary py-2 pl-2 ">
             Holy Rosary...
           </li>
         </em>
@@ -685,7 +689,9 @@
 
         <h2>Leader: - PRAYER FOR PEACE IN OUR FAMILY</h2>
         <h2>All;-</h2>
-        <p class="pb-3">Almighty and everliving God, help us to live as holy family united in respect and love. Bring us to the joy and peace of your eternal home, grant this through our Lord Jesus Christ. your Son, who lives and reigns with you in unity of the holy Spirit One God for ever and ever. Amen.</p>
+        <p class="pb-3">Almighty and everliving God, help us to live as holy family united in respect and love. Bring us
+          to the joy and peace of your eternal home, grant this through our Lord Jesus Christ. your Son, who lives and
+          reigns with you in unity of the holy Spirit One God for ever and ever. Amen.</p>
 
         <h2>Leader: - CLOSING PRAYER TO THE BLESSED SACRAMENT </h2>
         <p class="pb-3">All: As this hour of adoration closes, O Jesus* I renew my faith and trust in You* I am
@@ -798,7 +804,7 @@
 
     <article id="nav">
       <div
-        class="open-setting w-full lg:w-1/4 overflow-hidden  fixed bottom-0 h-0 left-0 duration-500 transition-all bg-white text-black z-20">
+        class="open-setting w-full lg:w-1/4 overflow-hidden  fixed bottom-0 h-0 left-0 duration-700 transition-all ease-in-out bg-white text-black z-20">
         <div class="settings text-xl text-white p-2.5 mb-1 flex justify-between items-center">
           <h3>Settings</h3>
           <div class="close-setting cursor-pointer"><svg xmlns="http://www.w3.org/2000/svg" fill="none"
@@ -877,7 +883,7 @@
             </div>
             <form>
 
-              <input type="range" name="range" id="range-val" min="1" max="1.5" step="0.01" value="0">
+              <input type="range" name="range" id="font-size" min="1" max="1.5" step="0.01" value="0">
             </form>
 
           </div>
@@ -894,7 +900,7 @@
 
             </div>
 
-            <input type="range" name="range" min="0" max="100" id="range" value="50">
+            <input  type="range" name="range" min="30" max="100" step="1" id="brightness" value="50%">
           </div>
 
           <div class="pl-3 pb-1.5 flex justify-between items-center">
@@ -988,8 +994,9 @@
           </li>
 
           <li
-            class="size-7 grid place-items-center duration-500 bg-black text-white hover:bg-white hover:text-black rounded-full cursor-pointer mr-2">         
-            <a href="https://www.linkedin.com/in/emmanuel-onu-3b2934193" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>           
+            class="size-7 grid place-items-center duration-500 bg-black text-white hover:bg-white hover:text-black rounded-full cursor-pointer mr-2">
+            <a href="https://www.linkedin.com/in/emmanuel-onu-3b2934193" target="_blank"><i
+                class="fa-brands fa-linkedin-in"></i></a>
           </li>
 
           <li
@@ -999,7 +1006,7 @@
 
           <li
             class="size-7 grid place-items-center duration-500 bg-black text-white hover:bg-white hover:text-black rounded-full cursor-pointer mr-2">
-           <a href="https://www.instagram.com/sireconu" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.instagram.com/sireconu" target="_blank"><i class="fa-brands fa-instagram"></i></a>
           </li>
 
           <li
